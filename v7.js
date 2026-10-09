@@ -23,6 +23,36 @@ function validateRequiredForm(m,data) {
   throw new Error('Preencha os campos obrigatórios: '+missing.map(f=>f.label).join(', ')+'.');
 }
 let dgConfirmationOpen=false;
+function wireMobileMenu() {
+  if(wireMobileMenu.cleanup) wireMobileMenu.cleanup();
+  const toggle=document.getElementById('toggle-sidebar'),close=document.getElementById('mobile-menu-close'),backdrop=document.getElementById('mobile-menu-backdrop'),sidebar=document.getElementById('dgSidebar');
+  const mobile=window.matchMedia('(max-width:700px)');
+  function setOpen(open,restore=true) {
+    open=Boolean(open&&mobile.matches);
+    document.body.classList.toggle('menu-open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    backdrop.hidden=!open;
+    sidebar.inert=mobile.matches&&!open;
+    document.querySelector('.main').inert=open;
+    if(open)close.focus();else if(restore&&mobile.matches)toggle.focus();
+  }
+  toggle.onclick=()=>setOpen(!document.body.classList.contains('menu-open'));
+  close.onclick=backdrop.onclick=()=>setOpen(false);
+  const keyboard=event=>{
+    if(!mobile.matches||!document.body.classList.contains('menu-open'))return;
+    if(event.key==='Escape'){event.preventDefault();setOpen(false);return}
+    if(event.key==='Tab'){
+      const items=[...sidebar.querySelectorAll('button,a[href],[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);
+      const first=items[0],last=items[items.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus()}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus()}
+    }
+  };
+  const resize=()=>setOpen(false,false);
+  document.addEventListener('keydown',keyboard);mobile.addEventListener('change',resize);
+  wireMobileMenu.cleanup=()=>{document.removeEventListener('keydown',keyboard);mobile.removeEventListener('change',resize)};
+  setOpen(false,false);
+}
 function dgConfirm(message) {
   if(dgConfirmationOpen) return Promise.resolve(false);
   dgConfirmationOpen=true;
