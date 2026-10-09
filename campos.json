@@ -1,0 +1,3046 @@
+{
+  "pessoas": {
+    "title": "Pessoas",
+    "fields": [
+      {
+        "key": "cadastro_id",
+        "label": "ID da pessoa",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "tipo",
+        "label": "Tipo de pessoa",
+        "type": "select",
+        "options": [
+          "Jurídica",
+          "Física"
+        ],
+        "required": false
+      },
+      {
+        "key": "nome",
+        "label": "Nome / Razão social",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "fantasia",
+        "label": "Apelido / Nome fantasia",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "documento",
+        "label": "CPF / CNPJ",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "inscricao",
+        "label": "RG / Inscrição estadual",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "data",
+        "label": "Nascimento / Abertura",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo",
+          "Bloqueado"
+        ],
+        "required": false
+      },
+      {
+        "key": "categorias",
+        "label": "Categorias",
+        "type": "checks",
+        "options": [
+          "Cliente",
+          "Fornecedor",
+          "Proprietário",
+          "Agenciador"
+        ],
+        "required": false
+      },
+      {
+        "key": "rntrc",
+        "label": "RNTRC",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "tipo_proprietario",
+        "label": "Tipo de proprietário",
+        "type": "select",
+        "options": [
+          "",
+          "TAC",
+          "ETC",
+          "CTC"
+        ],
+        "required": false
+      },
+      {
+        "key": "inss",
+        "label": "INSS",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cep",
+        "label": "CEP",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "logradouro",
+        "label": "Logradouro",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "numero",
+        "label": "Número",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "bairro",
+        "label": "Bairro",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cidade",
+        "label": "Cidade",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "uf",
+        "label": "UF",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pais",
+        "label": "País",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "telefone",
+        "label": "Telefone",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "celular",
+        "label": "Celular",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "email",
+        "label": "E-mail",
+        "type": "email",
+        "required": false
+      },
+      {
+        "key": "contatos",
+        "label": "Contatos adicionais (nome, telefone, e-mail)",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "seguradora",
+        "label": "Seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "seguradora_cnpj",
+        "label": "CNPJ da seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "apolice_rctrc",
+        "label": "Apólice RCTR-C",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "apolice_rcdc",
+        "label": "Apólice RC-DC",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  },
+  "motoristas": {
+    "title": "Motoristas",
+    "fields": [
+      {
+        "key": "cadastro_id",
+        "label": "ID do motorista",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "nome",
+        "label": "Nome",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "apelido",
+        "label": "Apelido",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cpf",
+        "label": "CPF",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "rg",
+        "label": "RG",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "rg_orgao",
+        "label": "Órgão emissor",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "rg_uf",
+        "label": "UF do RG",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pis",
+        "label": "PIS",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "estado_civil",
+        "label": "Estado civil",
+        "type": "select",
+        "options": [
+          "",
+          "Solteiro",
+          "Casado",
+          "Divorciado",
+          "Viúvo",
+          "União estável"
+        ],
+        "required": false
+      },
+      {
+        "key": "nascimento",
+        "label": "Nascimento",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "naturalidade",
+        "label": "Naturalidade",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pai",
+        "label": "Nome do pai",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "mae",
+        "label": "Nome da mãe",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "telefone",
+        "label": "Telefone",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "celular",
+        "label": "Celular",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "email",
+        "label": "E-mail",
+        "type": "email",
+        "required": false
+      },
+      {
+        "key": "cep",
+        "label": "CEP",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "logradouro",
+        "label": "Logradouro",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "numero",
+        "label": "Número",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "bairro",
+        "label": "Bairro",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cidade",
+        "label": "Cidade",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "uf",
+        "label": "UF",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pais",
+        "label": "País",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cnh",
+        "label": "Número da CNH",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cnh_categoria",
+        "label": "Categoria da CNH",
+        "type": "select",
+        "options": [
+          "",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "AB",
+          "AC",
+          "AD",
+          "AE"
+        ],
+        "required": false
+      },
+      {
+        "key": "cnh_validade",
+        "label": "Validade da CNH",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "cnh_primeira",
+        "label": "Primeira habilitação",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo",
+          "Bloqueado"
+        ],
+        "required": false
+      },
+      {
+        "key": "motivo",
+        "label": "Motivo do status",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Veículo de tração",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "captacao",
+        "label": "Captação",
+        "type": "ref",
+        "options": [
+          "captacao"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "drive_pasta",
+        "label": "Link da pasta Google Drive (opcional)",
+        "type": "text",
+        "required": false
+      }
+    ]
+  },
+  "veiculos": {
+    "title": "Veículos",
+    "fields": [
+      {
+        "key": "cadastro_id",
+        "label": "ID do veículo",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "placa",
+        "label": "Placa",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "tipo",
+        "label": "Tipo",
+        "type": "select",
+        "options": [
+          "Cavalo",
+          "Truck",
+          "Toco",
+          "Carreta",
+          "Bitrem",
+          "Rodotrem",
+          "VUC",
+          "Utilitário",
+          "Outro"
+        ],
+        "required": true
+      },
+      {
+        "key": "carroceria",
+        "label": "Carroceria",
+        "type": "select",
+        "options": [
+          "Não aplicável",
+          "Baú",
+          "Sider",
+          "Graneleiro",
+          "Prancha",
+          "Tanque",
+          "Frigorífico",
+          "Aberta",
+          "Outra"
+        ],
+        "required": false
+      },
+      {
+        "key": "eixos",
+        "label": "Eixos",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo",
+          "Bloqueado"
+        ],
+        "required": false
+      },
+      {
+        "key": "motivo",
+        "label": "Motivo do status",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "marca",
+        "label": "Marca",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "modelo",
+        "label": "Modelo",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cor",
+        "label": "Cor",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "ano_fabricacao",
+        "label": "Ano fabricação",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "ano_modelo",
+        "label": "Ano modelo",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "tara",
+        "label": "Tara (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "capacidade",
+        "label": "Capacidade (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "renavam",
+        "label": "RENAVAM",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "chassi",
+        "label": "Chassi",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "proprietario",
+        "label": "Proprietário",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "rntrc",
+        "label": "RNTRC",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "rastreador",
+        "label": "Empresa de rastreamento",
+        "type": "select",
+        "options": [
+          "",
+          "OnixSat",
+          "Omnilink",
+          "Sascar",
+          "Outra"
+        ],
+        "required": false
+      },
+      {
+        "key": "rastreador_outro",
+        "label": "Outra empresa",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "dispositivo",
+        "label": "Identificador do rastreador",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cidade",
+        "label": "Cidade",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "uf",
+        "label": "UF",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "latitude",
+        "label": "Latitude",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "longitude",
+        "label": "Longitude",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "posicao_em",
+        "label": "Data da posição",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "drive_pasta",
+        "label": "Link da pasta Google Drive (opcional)",
+        "type": "text",
+        "required": false
+      }
+    ]
+  },
+  "cidades": {
+    "title": "Cidades",
+    "fields": [
+      {
+        "key": "nome",
+        "label": "Cidade",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "uf",
+        "label": "UF",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "ibge",
+        "label": "Código IBGE",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pais",
+        "label": "País",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo"
+        ],
+        "required": false
+      }
+    ]
+  },
+  "captacao": {
+    "title": "Captação",
+    "fields": [
+      {
+        "key": "data",
+        "label": "Data",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Novo",
+          "Em contato",
+          "Aprovado",
+          "Reprovado"
+        ],
+        "required": false
+      },
+      {
+        "key": "ultimo_contato",
+        "label": "Último contato",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "nome",
+        "label": "Nome do motorista",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "telefone",
+        "label": "Telefone",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "implemento",
+        "label": "Implemento",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "regioes",
+        "label": "Regiões de interesse",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "rotas",
+        "label": "Rotas de interesse",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "responsavel",
+        "label": "Captador responsável",
+        "type": "ref",
+        "options": [
+          "usuarios"
+        ],
+        "required": true
+      },
+      {
+        "key": "meio",
+        "label": "Meio de captação",
+        "type": "select",
+        "options": [
+          "Indicação",
+          "Fretebras",
+          "Entrou em contato",
+          "Outro"
+        ],
+        "required": false
+      },
+      {
+        "key": "meio_outro",
+        "label": "Outro meio",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "agenciador",
+        "label": "Agenciador",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista cadastrado",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações internas",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  },
+  "programacao": {
+    "title": "Programação",
+    "fields": [
+      {
+        "key": "lh_trip",
+        "label": "LH TRIP",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "cliente",
+        "label": "Cliente / Tomador",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": true
+      },
+      {
+        "key": "valor_cliente",
+        "label": "Frete recebido do cliente",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Captada",
+          "Sem motorista",
+          "Pronta para OC",
+          "OC criada",
+          "Aberta",
+          "Embarque Autorizado",
+          "Em Carregamento",
+          "Em Viagem",
+          "Chegada no Cliente",
+          "Finalizada",
+          "Cancelada"
+        ],
+        "required": false
+      },
+      {
+        "key": "carregamento",
+        "label": "Data e hora do carregamento",
+        "type": "datetime-local",
+        "required": true
+      },
+      {
+        "key": "eta_destino",
+        "label": "ETA destino / Descarga",
+        "type": "datetime-local",
+        "required": true
+      },
+      {
+        "key": "origem",
+        "label": "Remetente / Origem",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": true
+      },
+      {
+        "key": "destino",
+        "label": "Destinatário / Destino",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": true
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ],
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Tração",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "frete_agregado",
+        "label": "Frete fixo ofertado ao agregado",
+        "type": "offer",
+        "required": false
+      },
+      {
+        "key": "pedagio",
+        "label": "Pedágio repassado ao agregado",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "produto",
+        "label": "Produto predominante",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "quantidade",
+        "label": "Quantidade",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "peso",
+        "label": "Peso (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "volume",
+        "label": "Volume",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "captador",
+        "label": "Captador da viagem",
+        "type": "ref",
+        "options": [
+          "usuarios"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "telefone_motorista",
+        "label": "Telefone",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "tipo_veiculo",
+        "label": "Tipo de veículo",
+        "type": "select",
+        "options": [
+          "",
+          "Cavalo",
+          "Truck",
+          "Toco",
+          "Carreta",
+          "Bitrem",
+          "Rodotrem",
+          "VUC",
+          "Utilitário",
+          "Outro"
+        ],
+        "required": false
+      },
+      {
+        "key": "carroceria",
+        "label": "Carroceria",
+        "type": "select",
+        "options": [
+          "",
+          "Não aplicável",
+          "Baú",
+          "Sider",
+          "Graneleiro",
+          "Prancha",
+          "Tanque",
+          "Frigorífico",
+          "Aberta",
+          "Outra"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes_associacao",
+        "label": "Observações da associação",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "cancelamento_motivo",
+        "label": "Motivo do cancelamento",
+        "type": "readonly",
+        "required": false
+      }
+    ]
+  },
+  "oc": {
+    "title": "OC",
+    "fields": [
+      {
+        "key": "programacao",
+        "label": "Programação",
+        "type": "ref",
+        "options": [
+          "programacao"
+        ]
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Aberta",
+          "Embarque Autorizado",
+          "Em Carregamento",
+          "Em Viagem",
+          "Chegada no Cliente",
+          "Finalizada"
+        ]
+      },
+      {
+        "key": "autorizacao",
+        "label": "Autorização de embarque",
+        "type": "datetime-local"
+      },
+      {
+        "key": "saida_real",
+        "label": "Saída real",
+        "type": "datetime-local"
+      },
+      {
+        "key": "descarga_real",
+        "label": "Descarga real",
+        "type": "datetime-local"
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea"
+      },
+      {
+        "key": "data_oc",
+        "label": "Data da OC",
+        "type": "date"
+      },
+      {
+        "key": "tomador",
+        "label": "Tomador do serviço",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "remetente",
+        "label": "Remetente",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "destinatario",
+        "label": "Destinatário",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "origem",
+        "label": "Origem (Razão Social)",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "destino",
+        "label": "Destino (Razão Social)",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "quantidade",
+        "label": "Quantidade",
+        "type": "number"
+      },
+      {
+        "key": "volume",
+        "label": "Volume",
+        "type": "text"
+      },
+      {
+        "key": "produto",
+        "label": "Mercadoria / Produto",
+        "type": "text"
+      },
+      {
+        "key": "ncm",
+        "label": "NCM",
+        "type": "text"
+      },
+      {
+        "key": "peso",
+        "label": "Peso (kg)",
+        "type": "number"
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ]
+      },
+      {
+        "key": "tracao",
+        "label": "Cavalo / Truck / Van / Utilitário",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ]
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ]
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ]
+      },
+      {
+        "key": "beneficiario_tipo",
+        "label": "Beneficiário do frete",
+        "type": "select",
+        "options": [
+          "Proprietário do Veículo",
+          "Motorista",
+          "Outra Pessoa"
+        ]
+      },
+      {
+        "key": "beneficiario",
+        "label": "Pessoa beneficiária",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ]
+      },
+      {
+        "key": "beneficiario_rntrc",
+        "label": "ANTT / RNTRC do beneficiário",
+        "type": "text"
+      },
+      {
+        "key": "frete_agregado",
+        "label": "Valor do frete a pagar",
+        "type": "money"
+      },
+      {
+        "key": "adiantamento_calculado",
+        "label": "Adiantamento (70%)",
+        "type": "readonly"
+      },
+      {
+        "key": "pedagio",
+        "label": "Pedágio",
+        "type": "money"
+      },
+      {
+        "key": "inss_desconto",
+        "label": "INSS",
+        "type": "money"
+      },
+      {
+        "key": "sest_desconto",
+        "label": "SEST",
+        "type": "money"
+      },
+      {
+        "key": "senat_desconto",
+        "label": "SENAT",
+        "type": "money"
+      },
+      {
+        "key": "saldo_calculado",
+        "label": "Saldo (30%)",
+        "type": "readonly"
+      },
+      {
+        "key": "previsao_adiantamento",
+        "label": "Previsão do pagamento de adiantamento",
+        "type": "readonly"
+      },
+      {
+        "key": "previsao_saldo",
+        "label": "Previsão do pagamento do saldo",
+        "type": "readonly"
+      },
+      {
+        "key": "valor_cliente",
+        "label": "Valor do frete a receber",
+        "type": "money"
+      },
+      {
+        "key": "abertura_em",
+        "label": "Abertura da OC",
+        "type": "datetime-local"
+      },
+      {
+        "key": "carregamento_real",
+        "label": "Início do carregamento",
+        "type": "datetime-local"
+      },
+      {
+        "key": "chegada_real",
+        "label": "Chegada no cliente",
+        "type": "datetime-local"
+      },
+      {
+        "key": "cancelamento_em",
+        "label": "Data do cancelamento",
+        "type": "datetime-local"
+      },
+      {
+        "key": "cancelamento_motivo",
+        "label": "Motivo do cancelamento",
+        "type": "textarea"
+      }
+    ]
+  },
+  "cte": {
+    "title": "CT-e",
+    "fields": [
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": true
+      },
+      {
+        "key": "emissao",
+        "label": "Data de emissão",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "ambiente",
+        "label": "Ambiente",
+        "type": "select",
+        "options": [
+          "Homologação",
+          "Produção"
+        ],
+        "required": false
+      },
+      {
+        "key": "serie",
+        "label": "Série",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "numero",
+        "label": "Número",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "tipo",
+        "label": "Tipo CT-e",
+        "type": "select",
+        "options": [
+          "Normal",
+          "Complementar",
+          "Substituição"
+        ],
+        "required": false
+      },
+      {
+        "key": "servico",
+        "label": "Tipo de serviço",
+        "type": "select",
+        "options": [
+          "Normal",
+          "Subcontratação",
+          "Redespacho",
+          "Redespacho intermediário",
+          "Vinculado a multimodal"
+        ],
+        "required": false
+      },
+      {
+        "key": "chave_referenciada",
+        "label": "Chave CT-e referenciado",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cfop",
+        "label": "CFOP",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "remetente",
+        "label": "Remetente",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "destinatario",
+        "label": "Destinatário",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "expedidor",
+        "label": "Expedidor",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "recebedor",
+        "label": "Recebedor",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "pagador",
+        "label": "Pagador",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "tomador",
+        "label": "Tomador",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "origem_cidade",
+        "label": "Município origem",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "destino_cidade",
+        "label": "Município destino",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "documentos",
+        "label": "Documentos transportados (chave NF-e, número, série, valor)",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "produto",
+        "label": "Produto predominante",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "quantidade",
+        "label": "Quantidade",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "peso",
+        "label": "Peso (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "valor_carga",
+        "label": "Valor da mercadoria",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "seguro_responsavel",
+        "label": "Responsável pelo seguro",
+        "type": "select",
+        "options": [
+          "",
+          "Transportador",
+          "Remetente",
+          "Destinatário",
+          "Tomador Serviço",
+          "Sem Seguro"
+        ],
+        "required": false
+      },
+      {
+        "key": "seguradora",
+        "label": "Seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "seguradora_cnpj",
+        "label": "CNPJ da seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "apolice",
+        "label": "Apólice",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "averbacao",
+        "label": "Averbação",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "valor_segurado",
+        "label": "Valor segurado",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "aliquota_seguro",
+        "label": "Alíquota seguro (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "frete_agregado",
+        "label": "Frete agregado",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "frete",
+        "label": "Frete",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "outros",
+        "label": "Outros componentes",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "seguro",
+        "label": "Seguro",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "pedagio",
+        "label": "Pedágio",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "valor_total",
+        "label": "Valor total da prestação",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "icms_cst",
+        "label": "CST ICMS",
+        "type": "select",
+        "options": [
+          "",
+          "00 - Tributação Normal",
+          "40 - Isenção de ICMS",
+          "60 - ICMS ST",
+          "90 - ICMS Outros"
+        ],
+        "required": false
+      },
+      {
+        "key": "icms_base",
+        "label": "Base ICMS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "icms_reducao",
+        "label": "Redução base (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "icms_aliquota",
+        "label": "Alíquota ICMS (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "icms_valor",
+        "label": "Valor ICMS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "ibs_cbs_cst",
+        "label": "CST IBS / CBS",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "classe_tributaria",
+        "label": "cClassTrib",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "ibs_cbs_base",
+        "label": "Base IBS / CBS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "ibs_uf_aliquota",
+        "label": "Alíquota IBS UF (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "ibs_mun_aliquota",
+        "label": "Alíquota IBS Município (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "cbs_aliquota",
+        "label": "Alíquota CBS (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ],
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Tração",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes_fiscais",
+        "label": "Observações fiscais",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações internas",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "pagador_frete",
+        "label": "Pagador do frete",
+        "type": "select",
+        "options": [
+          "",
+          "Remetente",
+          "Destinatário",
+          "Recebedor",
+          "Outro"
+        ],
+        "required": false
+      },
+      {
+        "key": "tipo_frete",
+        "label": "Tipo de frete",
+        "type": "select",
+        "options": [
+          "",
+          "Carga",
+          "Unitário"
+        ],
+        "required": false
+      },
+      {
+        "key": "seguro_efeito",
+        "label": "Efeito do seguro",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "aliquota_rctrc",
+        "label": "Alíquota RCTR-C (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "aliquota_rcfdc",
+        "label": "Alíquota RCFDC (%)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "apolice_2",
+        "label": "Apólice 2",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "tipo_base_icms",
+        "label": "Tipo de base de cálculo ICMS",
+        "type": "select",
+        "options": [
+          "",
+          "Frete",
+          "Frete + Pedágio",
+          "Frete + Pedágio + Seguro",
+          "Frete + Pedágio + Outras Despesas",
+          "Frete + Pedágio + Seguro + Outras Despesas"
+        ],
+        "required": false
+      },
+      {
+        "key": "ibs_uf_valor",
+        "label": "Valor IBS estadual",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "ibs_mun_valor",
+        "label": "Valor IBS municipal",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "cbs_valor",
+        "label": "Valor CBS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "situacao_emissao",
+        "label": "Situação da emissão",
+        "type": "readonly",
+        "required": false
+      }
+    ]
+  },
+  "mdfe": {
+    "title": "MDF-e",
+    "fields": [
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": true
+      },
+      {
+        "key": "numero",
+        "label": "Número",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "serie",
+        "label": "Série",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "ambiente",
+        "label": "Ambiente",
+        "type": "select",
+        "options": [
+          "Homologação",
+          "Produção"
+        ],
+        "required": false
+      },
+      {
+        "key": "emissao",
+        "label": "Data de emissão",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "contratante",
+        "label": "Contratante",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ],
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Tração",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "origem_cep",
+        "label": "CEP carregamento",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "origem_cidade",
+        "label": "Município carregamento",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "destino_cep",
+        "label": "CEP descarga",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "destino_cidade",
+        "label": "Município descarga",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": false
+      },
+      {
+        "key": "uf_inicio",
+        "label": "UF início",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "uf_fim",
+        "label": "UF fim",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "rota",
+        "label": "Rota MDF-e",
+        "type": "ref",
+        "options": [
+          "rotas"
+        ],
+        "required": false
+      },
+      {
+        "key": "documentos",
+        "label": "CT-e / NF-e vinculados (chave, município, valor carga, peso)",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "tipo_carga",
+        "label": "Tipo de carga",
+        "type": "select",
+        "options": [
+          "",
+          "01 - Granel sólido",
+          "02 - Granel líquido",
+          "03 - Frigorificada",
+          "04 - Conteinerizada",
+          "05 - Carga geral",
+          "06 - Neogranel",
+          "07 - Perigosa (granel sólido)",
+          "08 - Perigosa (granel líquido)",
+          "09 - Perigosa (carga frigorificada)",
+          "10 - Perigosa (conteinerizada)",
+          "11 - Perigosa (carga geral)",
+          "12 - Granel pressurizada"
+        ],
+        "required": false
+      },
+      {
+        "key": "produto",
+        "label": "Produto predominante",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "ncm",
+        "label": "NCM",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "peso",
+        "label": "Peso (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "valor_carga",
+        "label": "Valor total da carga",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "seguro_responsavel",
+        "label": "Responsável pelo seguro",
+        "type": "select",
+        "options": [
+          "",
+          "Transportador",
+          "Contratante"
+        ],
+        "required": false
+      },
+      {
+        "key": "seguradora",
+        "label": "Seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "seguradora_cnpj",
+        "label": "CNPJ seguradora",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "apolice",
+        "label": "Apólice",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "averbacao",
+        "label": "Averbação",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pedagio_pagador",
+        "label": "Responsável pelo vale-pedágio",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "pedagio_operadora",
+        "label": "Operadora vale-pedágio",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pedagio_documento",
+        "label": "Documento vale-pedágio",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pedagio_valor",
+        "label": "Valor vale-pedágio",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "ciot",
+        "label": "Número CIOT",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "ciot_responsavel",
+        "label": "Responsável pelo CIOT",
+        "type": "select",
+        "options": [
+          "",
+          "Transportador",
+          "Contratante"
+        ],
+        "required": false
+      },
+      {
+        "key": "ciot_cnpj",
+        "label": "CNPJ responsável CIOT",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "contrato",
+        "label": "Número contrato",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "contrato_valor",
+        "label": "Valor contrato",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "indicador_pagamento",
+        "label": "Indicador de pagamento",
+        "type": "select",
+        "options": [
+          "À vista",
+          "A prazo"
+        ],
+        "required": false
+      },
+      {
+        "key": "adiantamento",
+        "label": "Adiantamento",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "banco",
+        "label": "Banco",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "agencia",
+        "label": "Agência",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "conta",
+        "label": "Conta",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "pix",
+        "label": "Chave PIX",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "parcelas",
+        "label": "Parcelas (data, valor)",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "encerramento",
+        "label": "Data encerramento",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "cancelamento_motivo",
+        "label": "Justificativa cancelamento",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "pedagio_responsavel",
+        "label": "Responsável pelo pedágio",
+        "type": "select",
+        "options": [
+          "",
+          "Transportador",
+          "Contratante",
+          "Sem Pedágio"
+        ],
+        "required": false
+      },
+      {
+        "key": "pedagio_tipo",
+        "label": "Tipo de vale-pedágio",
+        "type": "select",
+        "options": [
+          "",
+          "TAG",
+          "Leitura de placa"
+        ],
+        "required": false
+      },
+      {
+        "key": "pedagio_operadora_cnpj",
+        "label": "CNPJ da operadora de vale-pedágio",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "situacao_emissao",
+        "label": "Situação da emissão",
+        "type": "readonly",
+        "required": false
+      }
+    ]
+  },
+  "vale_pedagio": {
+    "title": "Vale-pedágio",
+    "fields": [
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": true
+      },
+      {
+        "key": "pagador",
+        "label": "Pagador",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "beneficiario",
+        "label": "Beneficiário",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "operadora",
+        "label": "Operadora",
+        "type": "select",
+        "options": [
+          "Repom"
+        ],
+        "required": false
+      },
+      {
+        "key": "documento",
+        "label": "Documento",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "valor",
+        "label": "Valor",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "rota",
+        "label": "Rota",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "situacao_emissao",
+        "label": "Situação da emissão",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "data",
+        "label": "Data da operação",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Veículo / Placa",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "meio_pagamento",
+        "label": "Meio de pagamento",
+        "type": "select",
+        "options": [
+          "Repom"
+        ],
+        "required": false
+      },
+      {
+        "key": "situacao_operacao",
+        "label": "Situação da operação",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "lh_trip",
+        "label": "LH Trip da programação",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "cpf_cnpj_subcontratado",
+        "label": "CPF/CNPJ do subcontratado",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "placa_visual",
+        "label": "Placa da tração",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "eixos_tracao_visual",
+        "label": "Eixos da tração",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "eixos_carreta_visual",
+        "label": "Eixos da carreta",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "numero_eixos",
+        "label": "Total de eixos",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "ajustar_eixos",
+        "label": "Ajustar eixos manualmente",
+        "type": "select",
+        "options": [
+          "Não",
+          "Sim"
+        ],
+        "required": false
+      },
+      {
+        "key": "eixos_ajuste_motivo",
+        "label": "Motivo do ajuste de eixos",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "inicio_vigencia",
+        "label": "Início da vigência",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "fim_vigencia",
+        "label": "Fim da vigência",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "rodagem",
+        "label": "Rodagem",
+        "type": "select",
+        "options": [
+          "Simples",
+          "Dupla"
+        ],
+        "required": false
+      },
+      {
+        "key": "eixo_suspenso",
+        "label": "Eixo suspenso",
+        "type": "select",
+        "options": [
+          "Não",
+          "Sim"
+        ],
+        "required": false
+      },
+      {
+        "key": "origem_uf",
+        "label": "UF origem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "origem_cidade",
+        "label": "Cidade origem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "origem_codigo_ibge",
+        "label": "Código IBGE origem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "origem_cep",
+        "label": "CEP origem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "destino_uf",
+        "label": "UF destino",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "destino_cidade",
+        "label": "Cidade destino",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "destino_codigo_ibge",
+        "label": "Código IBGE destino",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "destino_cep",
+        "label": "CEP destino",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "item_financeiro1",
+        "label": "Item financeiro 1",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "item_financeiro2",
+        "label": "Item financeiro 2",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "item_financeiro3",
+        "label": "Item financeiro 3",
+        "type": "text",
+        "required": false
+      }
+    ]
+  },
+  "ciot": {
+    "title": "CIOT",
+    "fields": [
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": true
+      },
+      {
+        "key": "operadora",
+        "label": "Operadora",
+        "type": "select",
+        "options": [
+          "Repom"
+        ],
+        "required": false
+      },
+      {
+        "key": "responsavel",
+        "label": "Responsável",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "cnpj",
+        "label": "CNPJ responsável",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "numero",
+        "label": "Número CIOT",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "contrato",
+        "label": "Contrato",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "valor",
+        "label": "Valor contrato",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "situacao_emissao",
+        "label": "Situação da emissão",
+        "type": "readonly",
+        "required": false
+      },
+      {
+        "key": "ambiente",
+        "label": "Ambiente",
+        "type": "select",
+        "options": [
+          "Homologação",
+          "Produção"
+        ],
+        "required": false
+      },
+      {
+        "key": "cte",
+        "label": "CT-e vinculado",
+        "type": "ref",
+        "options": [
+          "cte"
+        ],
+        "required": false
+      },
+      {
+        "key": "mdfe",
+        "label": "MDF-e vinculado",
+        "type": "ref",
+        "options": [
+          "mdfe"
+        ],
+        "required": false
+      },
+      {
+        "key": "motorista",
+        "label": "Motorista",
+        "type": "ref",
+        "options": [
+          "motoristas"
+        ],
+        "required": false
+      },
+      {
+        "key": "tracao",
+        "label": "Tração",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta",
+        "label": "Carreta 1",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta2",
+        "label": "Carreta 2",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta3",
+        "label": "Carreta 3",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "carreta4",
+        "label": "Carreta 4",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": false
+      },
+      {
+        "key": "inicio_viagem",
+        "label": "Início da viagem",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "fim_viagem",
+        "label": "Fim previsto da viagem",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "documento_viagem",
+        "label": "Documento da viagem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "distancia",
+        "label": "Distância (km)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "cep_origem",
+        "label": "CEP de origem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "cep_destino",
+        "label": "CEP de destino",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "latitude_origem",
+        "label": "Latitude de origem",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "longitude_origem",
+        "label": "Longitude de origem",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "latitude_destino",
+        "label": "Latitude de destino",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "longitude_destino",
+        "label": "Longitude de destino",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "ncm",
+        "label": "NCM",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "produto",
+        "label": "Descrição da carga",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "peso_kg",
+        "label": "Peso da carga (kg)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "valor_carga",
+        "label": "Valor da carga",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "embalagem",
+        "label": "Embalagem",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "tipo_carga",
+        "label": "Tipo da carga",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "retorno_vazio",
+        "label": "Retorno vazio",
+        "type": "select",
+        "options": [
+          "Não",
+          "Sim"
+        ],
+        "required": false
+      },
+      {
+        "key": "alto_desempenho",
+        "label": "Alto desempenho",
+        "type": "select",
+        "options": [
+          "Não",
+          "Sim"
+        ],
+        "required": false
+      },
+      {
+        "key": "documentos",
+        "label": "Documentos da carga",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "total_operacao",
+        "label": "Total da operação",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "total_viagem",
+        "label": "Total da viagem",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "total_adiantamento",
+        "label": "Total do adiantamento",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "total_quitacao",
+        "label": "Total de quitação",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "combustivel",
+        "label": "Combustível",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "pedagio",
+        "label": "Pedágio",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "seguro",
+        "label": "Seguro",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "outros_creditos",
+        "label": "Outros créditos",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "outros_debitos",
+        "label": "Outros débitos",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "justificativa_valores",
+        "label": "Justificativa dos valores",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "irrf",
+        "label": "IRRF",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "sest",
+        "label": "SEST",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "senat",
+        "label": "SENAT",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "inss",
+        "label": "INSS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "iss",
+        "label": "ISS",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "outros_tributos",
+        "label": "Outros tributos",
+        "type": "money",
+        "required": false
+      },
+      {
+        "key": "pagamentos",
+        "label": "Parcelas de pagamento",
+        "type": "rows",
+        "required": false
+      },
+      {
+        "key": "cancelamento_motivo",
+        "label": "Motivo do cancelamento",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "peso_encerramento",
+        "label": "Peso no encerramento (kg)",
+        "type": "number",
+        "required": false
+      }
+    ]
+  },
+  "rotas": {
+    "title": "Rotas MDF-e",
+    "fields": [
+      {
+        "key": "nome",
+        "label": "Nome da rota",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "origem",
+        "label": "Origem",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": true
+      },
+      {
+        "key": "destino",
+        "label": "Destino",
+        "type": "ref",
+        "options": [
+          "cidades"
+        ],
+        "required": true
+      },
+      {
+        "key": "ufs",
+        "label": "UFs do percurso em ordem (separadas por vírgula)",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo"
+        ],
+        "required": false
+      }
+    ]
+  },
+  "ocorrencias": {
+    "title": "Ocorrências de veículos",
+    "fields": [
+      {
+        "key": "veiculo",
+        "label": "Veículo",
+        "type": "ref",
+        "options": [
+          "veiculos"
+        ],
+        "required": true
+      },
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": false
+      },
+      {
+        "key": "data",
+        "label": "Data e hora",
+        "type": "datetime-local",
+        "required": false
+      },
+      {
+        "key": "tipo",
+        "label": "Tipo de ocorrência",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "descricao",
+        "label": "Descrição",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Aberta",
+          "Em tratamento",
+          "Resolvida"
+        ],
+        "required": false
+      }
+    ]
+  },
+  "financeiro": {
+    "title": "Financeiro",
+    "fields": [
+      {
+        "key": "oc",
+        "label": "Ordem de carregamento",
+        "type": "ref",
+        "options": [
+          "oc"
+        ],
+        "required": true
+      },
+      {
+        "key": "tipo",
+        "label": "Tipo",
+        "type": "select",
+        "options": [
+          "Recebimento cliente",
+          "Despesa",
+          "Bônus",
+          "Desconto"
+        ],
+        "required": false
+      },
+      {
+        "key": "descricao",
+        "label": "Descrição",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "valor",
+        "label": "Valor",
+        "type": "money",
+        "required": true
+      },
+      {
+        "key": "vencimento",
+        "label": "Vencimento",
+        "type": "date",
+        "required": true
+      },
+      {
+        "key": "pago_em",
+        "label": "Pago / Recebido em",
+        "type": "date",
+        "required": false
+      },
+      {
+        "key": "beneficiario",
+        "label": "Beneficiário",
+        "type": "ref",
+        "options": [
+          "pessoas"
+        ],
+        "required": false
+      },
+      {
+        "key": "observacoes",
+        "label": "Observações",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  },
+  "usuarios": {
+    "title": "Usuários",
+    "fields": [
+      {
+        "key": "nome",
+        "label": "Nome",
+        "type": "text"
+      },
+      {
+        "key": "email",
+        "label": "E-mail",
+        "type": "email"
+      },
+      {
+        "key": "senha",
+        "label": "Nova senha (deixe vazio para manter)",
+        "type": "password"
+      },
+      {
+        "key": "perfis",
+        "label": "Perfis",
+        "type": "checks",
+        "options": [
+          "Administrador",
+          "Operação",
+          "Cadastro",
+          "Captação",
+          "Torre de Controle",
+          "Financeiro"
+        ]
+      },
+      {
+        "key": "abas",
+        "label": "Abas adicionais",
+        "type": "checks",
+        "options": [
+          "pessoas",
+          "motoristas",
+          "veiculos",
+          "cidades",
+          "captacao",
+          "programacao",
+          "oc",
+          "cte",
+          "mdfe",
+          "vale_pedagio",
+          "ciot",
+          "rotas",
+          "ocorrencias",
+          "financeiro",
+          "usuarios",
+          "dashboard",
+          "tracking",
+          "painel",
+          "configuracoes",
+          "auditoria"
+        ]
+      },
+      {
+        "key": "ocultar",
+        "label": "Abas bloqueadas",
+        "type": "checks",
+        "options": [
+          "pessoas",
+          "motoristas",
+          "veiculos",
+          "cidades",
+          "captacao",
+          "programacao",
+          "oc",
+          "cte",
+          "mdfe",
+          "vale_pedagio",
+          "ciot",
+          "rotas",
+          "ocorrencias",
+          "financeiro",
+          "usuarios",
+          "dashboard",
+          "tracking",
+          "painel",
+          "configuracoes",
+          "auditoria"
+        ]
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "Ativo",
+          "Inativo"
+        ]
+      }
+    ]
+  }
+}

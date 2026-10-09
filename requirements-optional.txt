@@ -1,0 +1,2 @@
+# Somente para extração de PDFs com texto; o sistema principal não exige pacotes.
+pypdf
